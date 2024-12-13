@@ -1,0 +1,243 @@
+/* Global css */
+:root {
+    --bg-nav: #1e202b;
+    --w-7:5%;
+}
+body{
+    font-family: 'Roboto-Regular';
+    background-color: #1e202b;
+}
+
+@font-face {
+    font-family: 'Roboto-Black';
+    src: url(../fonts/Roboto-Black.ttf);
+}
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url(../fonts/Roboto-Medium.ttf);
+}
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+.container{
+    width: 75% !important;
+}
+
+/* end Global */
+a.navbar-brand {
+    display: contents;
+}
+.bg-nav {
+    background: var(--bg-nav);
+    padding: 3rem 0;
+}
+.w-7{
+width: var(--w-7);
+}
+ul.navbar-nav li a {
+    color: white;
+}
+.navbar-nav .nav-link.active{
+    border-color: #009ad8;
+    color: #009ad8;
+}
+.navbar-nav .nav-link{    
+    padding: 5px 25px;
+}
+.navbar-nav .nav-link.active, .nav-link:focus, .nav-link:hover{
+    color: #009ad8;
+    border: 2px solid  #009ad8;
+    border-radius: 30px;
+}
+a.nav-link {
+    padding: 5px 30px !important;
+    border: 2px solid transparent;
+    border-radius: 30px;
+}
+.layout-logo {
+    margin-left: 1rem;
+}
+.weater {
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+p.small {
+    font-size: 0.7rem;
+    color: #bfc1c8;
+    margin-bottom: 0;
+}
+section.hero {
+    background-image: url(../image/banner.png);
+    background-position: top center;
+    background-size: cover;
+    background-color: #1e202b;
+    background-repeat: no-repeat;
+    padding: 50px 0;
+}
+.locationBlocks input:first-child {
+    width: 94%;
+}
+.locationBlocks{
+    margin: 0 0 3rem  0;
+    padding: 0;
+}
+input#location {
+    width: 100%;
+    padding: 20px 50px 20px 20px;
+    background: #1e202b;
+    color: white;
+    border: 0;
+    border-radius: 30px;
+}
+input:focus {
+    outline: none;
+}
+.locationBlocks, .subscribeBlocks {
+    position: relative;
+        padding: 0;
+}
+input#sumit {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    padding: 0 40px;
+    border: none;
+    background: #009ad8;
+    padding: 10px 50px;
+    border-radius: 30px;
+    color: white;
+}
+footer {
+    background: #262936;
+    padding: 50px 0;
+    position: relative;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.copy-right p{
+    font-size: 14px;
+    color: #bfc1c8;
+    margin-top: 1.5rem;
+}
+.col-md-6 {
+    padding: 0;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px; 
+    justify-content: center;
+    align-items: center;
+}
+.social-icons .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #1e202b; 
+    border-radius: 50%; 
+    color: #009ad8; 
+    font-size: 20px; 
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.social-icons .icon:hover {
+    transform: scale(1.1); 
+}
+.weather-card {
+    background-color: #2a2d3e;
+    text-align: center;
+    padding-bottom: 16px;
+    width: 35% !important;
+}
+input#locationInput {
+    width: 100%;
+    padding: 20px 50px 20px 20px;
+    background: #1e202b !important;
+    color: white;
+    border: 0;
+    border-radius: 30px;
+}
+button#findWeather {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    padding: 0 40px;
+    border: none;
+    background: #009ad8;
+    padding: 10px 50px;
+    border-radius: 30px;
+    color: white;
+}
+.search-container {
+    position: relative;
+}
+.search-container {
+    padding: 0;
+    position: relative;
+    margin-bottom: 3rem;
+}
+div#weatherCards {
+    display: flex;
+    width: 100% !important;
+    padding: 0;
+}
+.weather-card:nth-child(2) {
+    background: #222536 !important;
+}
+.g-3, .gx-3 {
+    --bs-gutter-x: 0;
+}
+.day-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 20px;
+    background: #1e202b57;
+    padding: 1rem 2rem;
+    color: #BFC1C8;
+}
+.weather-info h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #BFC1C8;
+    margin-bottom: 10px;
+}
+.temp {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white;
+}
+.icon img {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 10px;
+}
+.description {
+    color: #00bcd4;
+    margin-bottom: 10px;
+}
+.details {
+    font-size: 12px;
+    color: #BFC1C8;
+}
+.details span img {
+    width: 6%;
+    padding: 4px;
+    margin-left: 8px;
+}
+.weather-card.col-md-4.two {
+    background: #272a3a;
+}
